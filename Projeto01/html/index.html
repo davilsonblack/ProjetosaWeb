@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/index.js" defer></script> 
+
+        <!--Link da fonte Poppins light 300-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">   
+
+        <!--Link dos icones-->
+        <script src="https://kit.fontawesome.com/4555fcd592.js" crossorigin="anonymous" defer></script>
+
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <h1>Login-Helper</h1>
+        </header>
+        <main>
+            <form>
+                <section class='email_password'>
+                    <input type="email" placeholder='example@gmail.com'>
+                    
+                    <div class="password_container">
+                        <input type="password" placeholder='******' id='password-input' class='password-input'>
+                        <i class="far fa-eye" id='eye1' onclick="mostrarpassword()"></i>
+                        <i class="far fa-eye-slash" id='eye2' onclick="mostrarpassword()"></i>
+                    </div>
+                </section>
+
+                <section class="password-info">
+                    <div>
+                        <input type="checkbox">
+                        <span>Lembrar Senha?</span>
+                    </div>
+                    <a href="#">Esqueceu sua senha?</a>
+                </section>
+
+                <button id='btn-login'>Login</button>
+                
+                <section class='links-container'>
+                    <span>Ou entre com:</span>
+                    <aside>
+                        <a href="#"><i class="fab fa-facebook facebook"></i></a>
+                        <a href="#"><i class="fab fa-google-plus google"></i></a>
+                        <a href="#"><i class="fab fa-github git"></i></a>
+                    </aside>
+                </section>
+                
+                <footer>
+                    <hr>
+                    <Span>Ainda não tem uma conta? <a href="#">Cadastre-se</a></Span>
+                </footer>
+            </form>
+        </main>
+    </body>
+</html>
